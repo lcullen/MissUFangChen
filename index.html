@@ -26,24 +26,7 @@
         </a>
         <p>头像</p>
     </div>
-    <div class="half">
-        <div class="uploader blue">
-            <input type="text" class="filename" readonly/>
-            <a class="license">
-                <img id="img-1" src="images/logo_n.png"/>
-            </a>
-            <input id="file0" class="file-3" type="file" size="30" onchange="javascript:setImagePreview();" accept="image/*" capture="camera" />
-        </div>
-        <div class="yulan">
-            <img src="" id="img0" >
-            <div class="enter">
-                <button class="btn-2 fl">取消</button>
-                <button class="btn-3 fr">确定</button>
-            </div>
-        </div>
-
-       <!-- <p>营业执照</p>-->
-    </div>
+   
     <div class="clear"></div>
 </section>
 
@@ -277,7 +260,7 @@ $("#logox").click(function(){
 
         $(".file-3").each(function(){
             if($(this).val()==""){
-                $(this).parents(".uploader").find(".filename").val("头像照片");
+                $(this).parents(".uploader").find(".filename").val("头像");
             }
         });
 $(".btn-3").click(function(){
