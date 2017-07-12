@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>创建应用</title>
+    <title>创建信息</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
@@ -19,13 +19,6 @@
     <div class="clear"></div>
 </header>
 <section class="logo-license">
-    <div class="half">
-        <a class="logo" id="logox">
-            <img id="bgl" src="images/logo_n.png"/>
-
-        </a>
-        <p>头像</p>
-    </div>
     <div class="half">
         <div class="uploader blue">
             <input type="text" class="filename" readonly/>
@@ -72,7 +65,7 @@
        </li>
        <li>
            <div class="left">
-            运动与健康评分:
+            运动健康评分:
            </div>
            <div class="right">
                <input name = 'sport_score'>
@@ -81,7 +74,7 @@
        </li>
        <li>
            <div class="left">
-          审美与表现评分:
+          审美表现评分:
            </div>
            <div class="right">
                <input name = 'active_score'>
@@ -277,7 +270,7 @@ $("#logox").click(function(){
 
         $(".file-3").each(function(){
             if($(this).val()==""){
-                $(this).parents(".uploader").find(".filename").val("营业执照");
+                $(this).parents(".uploader").find(".filename").val("头像照片");
             }
         });
 $(".btn-3").click(function(){
