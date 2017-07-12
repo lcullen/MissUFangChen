@@ -19,14 +19,31 @@
     <div class="clear"></div>
 </header>
 <section class="logo-license">
-    <div class="half">
+    <!-- <div class="half">
         <a class="logo" id="logox">
             <img id="bgl" src="images/logo_n.png"/>
 
         </a>
         <p>头像</p>
+    </div> -->
+    <div class="half" style="height: 200px">
+        <div class="uploader blue">
+            <input type="text" class="filename" readonly/>
+            <a class="license">
+                <img id="img-1" src="images/logo_n.png"/>
+            </a>
+            <input id="file0" class="file-3" type="file" size="30" onchange="javascript:setImagePreview();" accept="image/*" capture="camera" />
+        </div>
+        <div class="yulan">
+            <img src="" id="img0" >
+            <div class="enter">
+                <button class="btn-2 fl">取消</button>
+                <button class="btn-3 fr">确定</button>
+            </div>
+        </div>
+
+       <!-- <p>营业执照</p>-->
     </div>
-   
     <div class="clear"></div>
 </section>
 
