@@ -19,13 +19,13 @@
     <div class="clear"></div>
 </header>
 <section class="logo-license">
-    <!-- <div class="half">
+    <div class="half">
         <a class="logo" id="logox">
             <img id="bgl" src="images/logo_n.png"/>
 
         </a>
-        <p>头像</p>
-    </div> -->
+        <p>头像访问相册</p>
+    </div> 
     <div class="half" style="height: 200px">
         <div class="uploader blue">
             <input type="text" class="filename" readonly/>
@@ -277,7 +277,7 @@ $("#logox").click(function(){
 
         $(".file-3").each(function(){
             if($(this).val()==""){
-                $(this).parents(".uploader").find(".filename").val("头像");
+                $(this).parents(".uploader").find(".filename").val("头像拍照");
             }
         });
 $(".btn-3").click(function(){
